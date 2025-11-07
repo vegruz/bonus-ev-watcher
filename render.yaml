@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: bonus-monitor
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: "python monitor_bonus_auto.py"
