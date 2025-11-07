@@ -1,7 +1,7 @@
 services:
-  - type: worker
+  - type: web
     name: bonus-monitor
     env: python
     plan: free
-    buildCommand: ""
+    buildCommand: "pip install -r requirements.txt"
     startCommand: "python monitor_bonus_auto.py"
