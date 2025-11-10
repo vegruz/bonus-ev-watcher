@@ -1,1 +1,1 @@
-Visit: https://api.telegram.org/bot<TOKEN>/getUpdates to get chatId
+Visit: <code>https://api.telegram.org/bot<TOKEN\>/getUpdates</code> to get chatId
