@@ -11,7 +11,7 @@ from telegram import Bot
 
 # === CONFIGURAZIONE ===
 URL = "https://www.bonusveicolielettrici.mase.gov.it/index.html"
-STATE_FILE = "status_bonus.json"
+STATE_FILE = os.path.join("/tmp", "stato_bonus.json")
 
 # Inserisci i tuoi dati Telegram (oppure usa variabili d'ambiente)
 BOT_TOKEN = os.getenv("BOT_TOKEN") or "INSERIRE_QUA_TOKEN_TG"
@@ -94,3 +94,4 @@ def home():
 if __name__ == "__main__":
     threading.Thread(target=monitor_loop, daemon=True).start()
     app.run(host="0.0.0.0", port=5000)
+
